@@ -1,0 +1,53 @@
+/* Start of Pringles Man eye Animations */
+@keyframes wink{
+    0%{
+        height: inherit;
+        top: 150px;
+    }
+
+    50%{
+        height: 0px;
+        top: 150px;
+    }
+
+    100%{
+        height: inherit;
+        top: 150px;
+    }
+}
+
+.eyes{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 80px;
+    color: black;
+    box-shadow: 220px 150px 0 0 black;
+    border-radius: 100%;
+}
+
+.eyes::before{
+    content: '';
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 150px;
+    left: 440px;
+    background-color: black;
+    border-radius: 100%;
+    animation-name: wink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.eyes::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    border: 5px solid gold;
+    top: 115px;
+    left: 405px;
+}
